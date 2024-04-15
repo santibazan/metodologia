@@ -32,3 +32,20 @@ if es_primo(numero):
     print(f"{numero} es primo.")
 else:
     print(f"{numero} no es primo.")
+
+#AMAZON CODEWHISPERER
+def is_prime(num):
+  if num < 2:
+    return False
+  
+  for i in range(2,num):
+    if num % i == 0:
+      return False
+
+  return True
+
+number = int(input("Ingrese un numero: "))
+if is_prime(number):
+  print(f"{number} es un numero primo")
+else: 
+  print(f"{number} no es un numero primo")
